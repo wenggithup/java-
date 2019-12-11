@@ -21,16 +21,16 @@ public class Sell extends  StaffClass implements Staff {
     }
 
     @Override
-    public void interfacePay() {
+    public double interfacePay() {
+        double sum;
         if (selltotal < 10000) {
-            System.out.println("售货员的薪资为：" + getSelltotal() * 0.1 + getBasepay());
+          sum=   getSelltotal() * 0.1 + getBasepay();
+        } else if (selltotal > 100000) {
+           sum= getSelltotal() * 0.18 + getBasepay();
+        } else {
+            sum= getSelltotal() * 0.15 + getBasepay();
         }
-            else if (selltotal> 100000) {
-                System.out.println("售货员的薪资为："+getSelltotal()*0.18+getBasepay());
-            } else {
-                System.out.println("售货员的薪资为："+getSelltotal()*0.15+getBasepay());
-            }
-
-        }
+        return sum;
+    }
     }
 

@@ -23,9 +23,6 @@ public class Test1 {
       staffClass.setStaffClasshour(205);
 //        hourWorker.interfacePay();
 //        hourWorker1.interfacePay();
-        sell.interfacePay();
-
-   staffClass.interfacePay();
-
+        System.out.println("工资总和"+company.showAllPay());
     }
 }

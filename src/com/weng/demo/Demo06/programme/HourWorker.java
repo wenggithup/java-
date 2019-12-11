@@ -3,9 +3,6 @@ package com.weng.demo.Demo06.programme;
 public class HourWorker extends StaffClass implements Staff{
     private double hour;
     private double hourpay;
-
-
-
     public double getHour() {
         return hour;
     }
@@ -24,8 +21,8 @@ public class HourWorker extends StaffClass implements Staff{
 
 
     @Override
-    public void interfacePay() {
-       System.out.println("小时工薪资为："+hour*hourpay);
+    public double interfacePay() {
 
+    return hour*hourpay;
     }
 }
