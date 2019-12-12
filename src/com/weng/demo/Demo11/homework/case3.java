@@ -17,7 +17,6 @@ public class case3 implements Collection {
         }
         return false;
     }
-
     @Override
     public boolean contains(Object o) {
        for(int i=0;i<obj.length;i++){
