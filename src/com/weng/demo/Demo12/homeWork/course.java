@@ -3,28 +3,38 @@ package com.weng.demo.Demo12.homeWork;
 import java.util.ArrayList;
 
 public class course {
-    ArrayList coursenum =new ArrayList();
-    ArrayList coursename=new ArrayList();
-    Student stu=new Student();
+    private int cid;
+    private String cnmae;
 
-    public ArrayList getCoursenum(String stuname) {
-        return coursenum;
+    public course(int cid, String cnmae) {
+        this.cid = cid;
+        this.cnmae = cnmae;
     }
 
-    public void setCoursenum(ArrayList coursenum) {
-        this.coursenum = coursenum;
+    public course() {
     }
 
-    public ArrayList getCoursename(ArrayList stuname) {
-        if(stuname==stu.getStuname()) {
-            return coursename;
-        }
-        return stuname;
+    public int getCid() {
+        return cid;
     }
 
-    public void setCoursename(ArrayList coursename) {
-        this.coursename = coursename;
+    public void setCid(int cid) {
+        this.cid = cid;
     }
 
+    public String getCnmae() {
+        return cnmae;
+    }
 
+    public void setCnmae(String cnmae) {
+        this.cnmae = cnmae;
+    }
+
+    @Override
+    public String toString() {
+        return "course{" +
+                "cid=" + cid +
+                ", cnmae='" + cnmae + '\'' +
+                '}';
+    }
 }

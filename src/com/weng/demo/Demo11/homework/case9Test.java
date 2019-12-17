@@ -1,16 +1,20 @@
 package com.weng.demo.Demo11.homework;
 
+import com.weng.demo.Demo12.homeWork.Student;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class case9Test {
     public static void main(String[] args) {
-        case9 c=new case9();
-        c.setStunum(90);
-        c.add(80);
-        c.delete(80);
-        c.add(80);
-        c.add(90);
-        System.out.println(c.getStunum());
+        List list=new ArrayList();
+        list.add(new Student(20,"张三"));
+        list.add(new Student(21,"张三"));
+        list.add(new Student(22,"张三"));
+        for (Object o:list) {
+            Student student=(Student)o;
+            System.out.println(student.toString());
+        }
+
     }
-
-
-
 }

@@ -15,6 +15,4 @@ public class case7 {
        str5.reverse();str6.reverse();
        System.out.println(str1+" "+str2+" "+str3+" "+str4+" "+str5+" "+str6);
    }
-
-
 }

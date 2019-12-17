@@ -144,8 +144,6 @@ public class MyCollection implements Collection {
 //        for (Object  o: obj) {  // NullPointException
 //            System.out.println();
 //        }
-
-
         Iterator it = c.iterator();
         while (it.hasNext()){
             Object o=it.next();

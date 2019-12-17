@@ -19,6 +19,7 @@ public class Car {
     }
 
 
+
     public String getSize() {
         return size;
     }

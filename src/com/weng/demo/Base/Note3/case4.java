@@ -1,4 +1,4 @@
-package com.weng.demo.jichu.Note3;
+package com.weng.demo.Base.Note3;
 
 public class case4 {
     public static void main(String[] args) {

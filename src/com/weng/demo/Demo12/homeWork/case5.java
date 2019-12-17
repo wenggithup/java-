@@ -9,15 +9,14 @@ public class case5 {
         Scanner sc=new Scanner(System.in);
         HashSet<Character> hs=new HashSet<Character>();
        String s=sc.next();
-       char [] c=s.toCharArray();
+       char [] c=s.toCharArray();//数组接收
         for (Character d:
              c) {
-            hs.add(d);
-
+            hs.add(d);//遍历增加在hs中
         }
         for (char e:
              hs) {
-            System.out.print(e);
+            System.out.print(e);//输出
             
         }
     }

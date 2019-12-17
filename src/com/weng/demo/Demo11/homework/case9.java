@@ -19,6 +19,12 @@ public class case9 {
     public void setStuname(String stuname) {
         this.stuname = stuname;
     }
+
+    public case9(int stunum, String stuname) {
+        this.stunum = stunum+1;
+        this.stuname = stuname;
+    }
+
     public void add(int stunum){
         this.stunum=getStunum()+1;
     }

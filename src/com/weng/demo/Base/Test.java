@@ -1,4 +1,4 @@
-package com.weng.demo.jichu;
+package com.weng.demo.Base;
 
 public class Test  {
     public static void main(String[] args) {

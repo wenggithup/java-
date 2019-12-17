@@ -1,26 +1,57 @@
 package com.weng.demo.Demo12.homeWork;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class Student {
-     ArrayList stunum=new ArrayList();
-     ArrayList stuname=new ArrayList();
-    ;
+        private int stuid;
+        private String stuname;
+        private List list;
 
-    public ArrayList getStunum() {
-        return stunum;
+    public Student(int stuid, String stuname) {
+        this.stuid = stuid;
+        this.stuname = stuname;
+        list=new ArrayList();
     }
 
-    public void setStunum(ArrayList stunum) {
-        this.stunum = stunum;
+    public Student() {
+        list=new ArrayList();
     }
 
-    public ArrayList getStuname() {
+    public int getStuid() {
+        return stuid;
+    }
+
+    public void setStuid(int stuid) {
+        this.stuid = stuid;
+    }
+
+    public String getStuname() {
         return stuname;
     }
 
-    public void setStuname(ArrayList stuname) {
+    public void setStuname(String stuname) {
         this.stuname = stuname;
+    }
+
+    public List getList() {
+        return list;
+    }
+
+    public void setList(List list) {
+        this.list = list;
+    }
+    public void addstu(course co){
+        list.add(co);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "stuid=" + stuid +
+                ", stuname='" + stuname + '\'' +
+                ", list=" + list +
+                '}';
     }
 }

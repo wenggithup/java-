@@ -1,4 +1,4 @@
-package com.weng.demo.jichu.Note3;
+package com.weng.demo.Base.Note3;
 
 import java.util.Scanner;
 public class case5 {
